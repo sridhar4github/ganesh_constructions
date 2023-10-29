@@ -1,0 +1,47 @@
+.App {
+  text-align: center;
+}
+
+.img-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  transform: translate(-50%, -50%);
+}
+
+
+/* keyframes for animation;  simple 0 to 360 */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* basic structure for the rays setup */
+#raysDemoHolder	{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#rays	{ /* with animation properties */
+  background: url("https://davidwalsh.name/wp-content/themes/2k11/images/rays-main.png") 0 0 no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -245px;
+  margin-left: -245px;
+  width: 490px;
+  height: 490px;
+
+  /* microsoft ie */
+  animation-name: spin;
+  animation-duration: 40000ms; /* 40 seconds */
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+  opacity: 0.6;
+}

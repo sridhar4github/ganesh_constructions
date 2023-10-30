@@ -1,6 +1,21 @@
-.App {
-  text-align: center;
+body, html {
+  height: 100%;
 }
+.text-indent {
+  text-indent: -9999px;
+}
+
+.animated-container {
+  background: #000;
+  height: 400px;
+}
+
+
+
+
+
+
+
 
 .img-icon {
   position: absolute;
@@ -11,15 +26,8 @@
   transform: translate(-50%, -50%);
 }
 
-
-/* keyframes for animation;  simple 0 to 360 */
-@keyframes spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
 /* basic structure for the rays setup */
-#raysDemoHolder	{
+.raysDemoHolder	{
   position: absolute;
   top: 0;
   right: 0;
@@ -27,8 +35,8 @@
   left: 0;
 }
 
-#rays	{ /* with animation properties */
-  background: url("https://davidwalsh.name/wp-content/themes/2k11/images/rays-main.png") 0 0 no-repeat;
+.rays	{ /* with animation properties */
+  background: url("../src/assets/images/rays-main.png") 0 0 no-repeat;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -44,4 +52,10 @@
   animation-timing-function: linear;
 
   opacity: 0.6;
+}
+
+/* keyframes for animation;  simple 0 to 360 */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }

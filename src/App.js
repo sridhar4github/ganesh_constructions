@@ -1,20 +1,19 @@
-import ganeshImgBg1 from './assets/images/ganesh1-removebg-preview.png';
 import 'bootstrap/scss/bootstrap.scss'
-import './App.css';
+import './App.scss';
+import { Routes, Route} from "react-router-dom";
+import About from "./routes/About";
+import Home from "./routes/Home";
+// import Navbar from './Navbar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-          <div id="raysDemoHolder">
-              <div id="rays"></div>
-              <img src={ganeshImgBg1} className="img-icon" alt="logo" />
-          </div>
-        {/*<p>
-          Ganesh Constructions website coming soon...
-        </p>*/}
-      </header>
-    </div>
+      <>
+          {/*<Navbar />*/}
+          <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+          </Routes>
+      </>
   );
 }
 

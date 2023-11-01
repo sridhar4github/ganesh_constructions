@@ -4,7 +4,7 @@ import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDown
 const Home =()=>{
     return (
         <div className="main-container text-center">
-            <div className="animated-container position-relative">
+            <section className="animated-container position-relative">
                 <div className="raysDemoHolder">
                     <div className="rays text-indent">Rays</div>
                     <img src={ganeshImgBg1} className="img-icon" alt="logo"/>
@@ -12,26 +12,28 @@ const Home =()=>{
                 <div className="arrow bounce">
                     <KeyboardArrowDownOutlinedIcon color="primary" fontSize="large" />
                 </div>
-            </div>
+            </section>
 
-            <div className="second-module lightGrey-bg">
+            <section className="second-module lightGrey-bg">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6">
                             <img className="img-block" src={ganeshImgBg1} alt="img"/>
                         </div>
                         <div className="col-md-6">
-                            <div className="center-this p-5 mt-4">
-                                <h1 className="display-4">Housing</h1>
-                                <p className="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum itaque pariatur, repudiandae sequi sint sit veniam veritatis! Architecto aut consectetur debitis dicta facilis incidunt ipsum itaque laudantium pariatur rem, velit?</p>
-                                <a href="#" className="btn btn-outline-dark">Read More</a>
+                            <div className="row align-items-center h-100">
+                                <div className="col">
+                                    <h1 className="display-4">Housing</h1>
+                                    <p className="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut autem commodi consectetur cupiditate deserunt dolor dolore enim, error eum iure iusto quis rerum sapiente sit tenetur velit voluptate voluptatem voluptates!</p>
+                                    <a href="#" className="btn btn-outline-dark">Read More</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div className="third-module">
+            <section className="third-module">
                 <div className="container">
                     {/*<div className="row">
                         <div className="col-md-6">
@@ -65,12 +67,12 @@ const Home =()=>{
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div className="forth-module">
+            <section className="forth-module">
                 <div className="container-fluid p-0">
                     <div className="row">
-                        <div className="col-sm-12">
+                        <div className="col-sm-12 p-0">
                             <img src={fullBuilding} alt="test" className="img-fluid" />
                             <div className="heroContent center-this d-none">
                                 <h1>Jumbotron H1 goes here</h1>
@@ -83,7 +85,7 @@ const Home =()=>{
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
         </div>
     )

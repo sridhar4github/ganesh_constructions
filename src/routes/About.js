@@ -10,7 +10,7 @@ const About =()=>{
                         <div className="col-md-6">
                             <div className="center-this p-5 mt-4">
                                 <h1 className="display-4">About us</h1>
-                                <p className="lead">The company was established in 1991 as a private firm by <b>Mr. Chintham Yadagiri.</b></p>
+                                <p className="lead">The company was established in 1985 as a private firm by <b>Mr. Chintham Yadagiri.</b></p>
                                 <div className="info-contact pb-3">
                                     <h5>To Know more About Services</h5>
                                     <div className="number"> Call us | +91 9849221563</div>

@@ -6,7 +6,7 @@ const Footer =()=>{
         </div>*/
         <footer className="footer bg-dark">
             <div className="container">
-                <span>Footer content</span>
+                <span>© 1985-2023 Ganesh Constructions</span>
             </div>
         </footer>
     )

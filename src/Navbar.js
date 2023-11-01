@@ -1,6 +1,14 @@
-import { Link } from "react-router-dom"
+import React, {useState} from "react";
+import { Link } from "react-router-dom";
 import ganeshImgBg1 from '../src/assets/images/ganesh1-removebg-preview.png';
 const Navbar =()=>{
+
+    const [open, setOpen] = useState(false);
+
+    const handleOpen = () => {
+        setOpen(!open);
+    };
+
     return (
         /*<div>
             <Link to="/">Home</Link>
@@ -10,11 +18,11 @@ const Navbar =()=>{
             <img src={ganeshImgBg1} className="rounded-circle" style={{width: '50px'}}
                  alt="Avatar" />
             <a className="navbar-brand" href="#">Ganesh Constructions</a>
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            <button onClick={handleOpen} className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                     aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
-            <div className="collapse navbar-collapse" id="navbarCollapse">
+            <div className={`collapse navbar-collapse ${open ? 'show' : ''}`} id="navbarCollapse">
                 <ul className="navbar-nav mr-auto">
                     <li className="nav-item">
                         {/*<a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>*/}

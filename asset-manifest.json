@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/ganesh_constructions/static/css/main.ee206066.css",
-    "main.js": "/ganesh_constructions/static/js/main.bb94969c.js",
+    "main.css": "/ganesh_constructions/static/css/main.3f8e114e.css",
+    "main.js": "/ganesh_constructions/static/js/main.c70bbb8c.js",
     "static/media/fullBuilding.jpg": "/ganesh_constructions/static/media/fullBuilding.5f750901a34515df610c.jpg",
     "static/media/ganesh1-removebg-preview.png": "/ganesh_constructions/static/media/ganesh1-removebg-preview.c132017e7f7c77116daf.png",
     "static/media/rays-main.png": "/ganesh_constructions/static/media/rays-main.0e8cb2b3728652597980.png",
     "index.html": "/ganesh_constructions/index.html",
-    "main.ee206066.css.map": "/ganesh_constructions/static/css/main.ee206066.css.map",
-    "main.bb94969c.js.map": "/ganesh_constructions/static/js/main.bb94969c.js.map"
+    "main.3f8e114e.css.map": "/ganesh_constructions/static/css/main.3f8e114e.css.map",
+    "main.c70bbb8c.js.map": "/ganesh_constructions/static/js/main.c70bbb8c.js.map"
   },
   "entrypoints": [
-    "static/css/main.ee206066.css",
-    "static/js/main.bb94969c.js"
+    "static/css/main.3f8e114e.css",
+    "static/js/main.c70bbb8c.js"
   ]
 }

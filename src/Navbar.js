@@ -1,10 +1,34 @@
 import { Link } from "react-router-dom"
+import ganeshImgBg1 from '../src/assets/images/ganesh1-removebg-preview.png';
 const Navbar =()=>{
     return (
-        <div>
+        /*<div>
             <Link to="/">Home</Link>
             <Link to="/about">About</Link>
-        </div>
+        </div>*/
+        <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <img src={ganeshImgBg1} className="rounded-circle" style={{width: '50px'}}
+                 alt="Avatar" />
+            <a className="navbar-brand" href="#">Ganesh Constructions</a>
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
+            </button>
+            <div className="collapse navbar-collapse" id="navbarCollapse">
+                <ul className="navbar-nav mr-auto">
+                    <li className="nav-item">
+                        {/*<a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>*/}
+                        <Link className="nav-link" to="/">Home</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link className="nav-link" to="/contacts">Contacts</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link className="nav-link" to="/about">About</Link>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     )
 }
 export default Navbar;

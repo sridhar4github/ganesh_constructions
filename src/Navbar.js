@@ -9,11 +9,11 @@ const Navbar =()=>{
         setOpen(!open);
     };
 
+    const handleClose = () => {
+        setOpen(false);
+    };
+
     return (
-        /*<div>
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-        </div>*/
         <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
             <img src={ganeshImgBg1} className="rounded-circle" style={{width: '50px'}}
                  alt="Avatar" />
@@ -24,14 +24,14 @@ const Navbar =()=>{
             </button>
             <div className={`collapse navbar-collapse ${open ? 'show' : ''}`} id="navbarCollapse">
                 <ul className="navbar-nav mr-auto">
-                    <li className="nav-item">
+                    <li className="nav-item" onClick={handleClose}>
                         {/*<a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>*/}
                         <Link className="nav-link" to="/">Home</Link>
                     </li>
-                    <li className="nav-item">
+                    <li className="nav-item" onClick={handleClose}>
                         <Link className="nav-link" to="/contacts">Contacts</Link>
                     </li>
-                    <li className="nav-item">
+                    <li className="nav-item" onClick={handleClose}>
                         <Link className="nav-link" to="/about">About</Link>
                     </li>
                 </ul>

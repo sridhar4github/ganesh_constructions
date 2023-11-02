@@ -1,6 +1,7 @@
 import ganeshImgBg1 from '../assets/images/ganesh1-removebg-preview.png';
-import fullBuilding from '../assets/images/buildings/fullBuilding.jpg';
+import building2 from '../assets/images/buildings/building2.jpg';
 import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDownOutlined';
+import Carousel from '../components/Carousel'
 const Home =()=>{
     return (
         <div className="main-container text-center">
@@ -14,6 +15,10 @@ const Home =()=>{
                 </div>
             </section>
 
+            <section className="carousel-module p-0">
+                <Carousel />
+            </section>
+
             <section className="second-module lightGrey-bg">
                 <div className="container">
                     <div className="row">
@@ -23,8 +28,8 @@ const Home =()=>{
                         <div className="col-md-6">
                             <div className="row align-items-center h-100">
                                 <div className="col">
-                                    <h1 className="display-4">Housing</h1>
-                                    <p className="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut autem commodi consectetur cupiditate deserunt dolor dolore enim, error eum iure iusto quis rerum sapiente sit tenetur velit voluptate voluptatem voluptates!</p>
+                                    <h1 className="display-5">Housing Services</h1>
+                                    <p className="lead">Best deals on smart home & lighting integrators. Wholesale pricing for enhanced projects. Light up your projects with HitLights - Unleash the power of smart home technology.</p>
                                     <a href="#" className="btn btn-outline-dark">Read More</a>
                                 </div>
                             </div>
@@ -42,7 +47,7 @@ const Home =()=>{
                         <div className="col-md-6">
                             <div className="row align-items-center h-100">
                                 <div className="col">
-                                    <h1 className="display-4">Vertically Centered Text</h1>
+                                    <h1 className="display-5">Vertically Centered Text</h1>
                                     <p className="lead">Flexbox grids help you build some really nice layouts.
                                         <br/><br/>
                                         <a href="" className="">Learn More</a>
@@ -59,8 +64,8 @@ const Home =()=>{
                         <div className="col-md-6 order-md-1">
                             <div className="row align-items-center h-100">
                                 <div className="col">
-                                    <h1 className="display-4">Housing</h1>
-                                    <p className="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut autem commodi consectetur cupiditate deserunt dolor dolore enim, error eum iure iusto quis rerum sapiente sit tenetur velit voluptate voluptatem voluptates!</p>
+                                    <h1 className="display-5">Housing Services</h1>
+                                    <p className="lead">Best deals on smart home & lighting integrators. Wholesale pricing for enhanced projects. Light up your projects with HitLights - Unleash the power of smart home technology.</p>
                                     <a href="#" className="btn btn-outline-dark">Read More</a>
                                 </div>
                             </div>
@@ -69,11 +74,11 @@ const Home =()=>{
                 </div>
             </section>
 
-            <section className="forth-module">
+            <section className="forth-module p-0">
                 <div className="container-fluid p-0">
                     <div className="row">
                         <div className="col-sm-12 p-0">
-                            <img src={fullBuilding} alt="test" className="img-fluid" />
+                            <img src={building2} alt="test" className="img-fluid" />
                             <div className="heroContent center-this d-none">
                                 <h1>Jumbotron H1 goes here</h1>
                                 <p className="pHero">

@@ -1,0 +1,13 @@
+.carousel-container {
+  .carousel-root {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .carousel .slide img {
+    vertical-align: top;
+    border: 0;
+    width: 900px;
+    height: 400px;
+    object-fit: cover;
+  }
+}

@@ -13,7 +13,7 @@ const About =()=>{
                                 <p className="lead">The company was established in 1985 as a private firm by <b>Mr. Chintham Yadagiri.</b></p>
                                 <div className="info-contact pb-3">
                                     <h5>To Know more About Services</h5>
-                                    <div className="number"> Call us | +91 9849221563</div>
+                                    <div className="number"> Call us | +91 9849221563, +91 9032324239</div>
                                 </div>
                                 <Link className="btn btn-outline-dark" to="/">Read More</Link>
                             </div>
